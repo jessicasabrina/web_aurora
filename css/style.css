@@ -1,0 +1,1126 @@
+/* TIPOGRAFIAS--------------------------------------------------------------- */
+@font-face {
+  font-family: "corcomat_bold"; /* Dale el nombre que quieras usar */
+  src: url(../fonts/CormorantUnicase-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "corcomat_medium"; /* Dale el nombre que quieras usar */
+  src: url(../fonts/CormorantUnicase-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "uncial_antiqua"; /* Dale el nombre que quieras usar */
+  src: url(../fonts/UncialAntiqua-Regolar.ttf) format("truetype");
+}
+/* ------------------------------------------------------------------------*/
+
+/* AJUSTES GENERALES----------------------------------- */
+body {
+  background-color: #f5f2eb;
+  margin: 0;
+}
+
+p {
+  font-family: corcomat_medium;
+  font-size: 36px;
+  color: #121214;
+}
+
+img {
+  height: 500px;
+  width: 500px;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+#cure_for_me {
+  width: 50%;
+}
+
+/* --------------------------- */
+
+/* animaciones de texto y titulos ----------------------------------------------*/
+p,
+h2,
+h3,
+span {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+p.visible,
+h2.visible,
+h3.visible,
+span.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.entrada-izquierda {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.entrada-izquierda.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ----------------------------------------------------------------------------- */
+/* NAVBAR */
+header nav ul {
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  background: url(../images/moth.png) no-repeat center center;
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #121214;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #f5f2eb;
+  font-family: "corcomat_bold";
+}
+
+header nav a:hover {
+  color: #c19a5b;
+}
+/* ------------------------------------------------------------------------------------*/
+
+/* BANNER-------------------------------------------------------------------------------- */
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  background-color: #121214;
+}
+
+.banner_imagen {
+  background: url(../images/aurora_banner.png) no-repeat center center;
+  background-size: contain;
+}
+
+.contenido_banner {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 40px;
+  padding-right: 150px;
+}
+
+.titulo_banner {
+  font-size: 175px;
+  font-family: "uncial_antiqua";
+  text-align: center;
+  text-wrap: wrap;
+  color: #f5f2eb;
+}
+
+.btns_banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+/* ------------------------------------------------------------------- */
+
+/* BOTONES A---------------------------------------------------------------- */
+.btn_escuchar {
+  border: 2px solid #c19a5b;
+  background-color: #c19a5b;
+  color: #121214;
+  padding: 12px 24px;
+  font-family: "uncial_antiqua";
+  font-size: 42px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.btn_discografia {
+  background-color: transparent;
+  border: 2px solid #c19a5b;
+  color: #c19a5b;
+  padding: 12px 24px;
+  font-family: "uncial_antiqua";
+  font-size: 42px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.btn_canciones {
+  background-color: transparent;
+  border: 2px solid #8c382a;
+  color: #8c382a;
+  padding: 12px 24px;
+  font-family: "uncial_antiqua";
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* BOTONES BUTTON---------------------------------------------- */
+.btn_spotify {
+  border: 2px solid #8c382a;
+  background-color: #8c382a;
+  color: #f5f2eb;
+  padding: 12px 24px;
+  font-family: "uncial_antiqua";
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.btn_escuchar:hover,
+.btn_canciones:hover,
+.btn_discografia:hover,
+.btn_spotify:hover,
+.btn_volver:hover,
+.btn_enviar:hover {
+  background-color: #2d3e33;
+  border-color: #2d3e33;
+  color: #f5f2eb;
+}
+/* ------------------------------------------------------------------- */
+
+.contenedor {
+  width: 1280px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.titulos_h2 {
+  font-family: "uncial_antiqua";
+  font-size: 72px;
+  color: #2d3e33;
+}
+
+.titulos_h3 {
+  font-family: "corcomat_bold";
+  font-size: 48px;
+  color: #8c382a;
+}
+
+/* DECORACION---------------------------------------- */
+.img_manos_celestiales {
+  background: url(../images/manos_celestiales.png) repeat-x center center;
+  background-size: contain;
+  height: 350px;
+}
+
+.img_luna_fases {
+  background: url(../images/luna_fases.png) no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px 0 20px 0;
+}
+/* -------------------------------------------------- */
+
+/* ONRAMENTOS--------------------------------------- */
+.ornamento {
+  background: url(../images/ornamento.png) no-repeat center center;
+  background-size: cover;
+  width: 400px;
+  height: 500px;
+
+  display: grid;
+  grid-template-rows: 70% 30%;
+  justify-items: center;
+
+  font-family: corcomat_bold;
+  font-size: 32px;
+  color: #121214;
+  margin-bottom: 50px;
+}
+
+.ornamento > div {
+  align-self: end;
+}
+
+.ornamento span {
+  align-self: start;
+}
+/* ------------------------------------------------------ */
+
+/* GRIDS-------------------------------------------------- */
+.grid4 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+/* -------------------------------------------------- */
+
+/* ORNAMENTOS-------------------------------------------- */
+#naturaleza {
+  background: url(../images/naturaleza.png) no-repeat center center;
+}
+
+#humanidad {
+  background: url(../images/humanidad.png) no-repeat center center;
+}
+
+#espiritualidad {
+  background: url(../images/espiritualidad.png) no-repeat bottom center;
+}
+
+#tierra {
+  background: url(../images/tierra.png) no-repeat center center;
+}
+
+#naturaleza,
+#humanidad,
+#espiritualidad,
+#tierra {
+  width: 220px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* DECORACION-------------------------------------- */
+#lunas {
+  height: 400px;
+  width: 100%;
+  background-image:
+    url(../images/lunas.png),
+    linear-gradient(to bottom, #f5f2eb 50%, #c19a5b 50%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ---------------------------------------- */
+
+#generos_musicales {
+  background-color: #c19a5b;
+  padding: 50px 0 50px 0;
+}
+
+/* DECORACION------------------------------------ */
+#hongos {
+  background: url(../images/hongos.png) repeat-x;
+  background-size: contain;
+  height: 350px;
+  width: 100%;
+}
+/* ------------------------------------------------- */
+
+/* FOOTER--------------------------------------------- */
+.footer {
+  background-color: #121214;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 250px;
+  width: 100%;
+}
+
+.footer div {
+  padding: 0 50px 0 50px;
+}
+
+.footer ol {
+  margin: 0;
+  color: #f5f2eb;
+  font-family: "uncial_antiqua";
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.footer > div:nth-child(1) {
+  justify-self: start;
+  align-self: center;
+}
+
+.footer > div:nth-child(2) {
+  justify-self: center;
+  align-self: center;
+}
+
+.footer > div:nth-child(3) {
+  justify-self: end;
+  align-self: center;
+}
+
+.redes ol {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes li {
+  display: flex;
+}
+
+.icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-image: url(../images/social_media.png);
+  background-repeat: no-repeat;
+
+  transition: transform 0.3s ease;
+}
+.facebook {
+  background-position: 0 0;
+}
+.facebook:hover {
+  background-position: 0 -48px;
+}
+.instagram {
+  background-position: -48px 0;
+}
+.instagram:hover {
+  background-position: -48px -48px;
+}
+.x {
+  background-position: -96px 0;
+}
+.x:hover {
+  background-position: -96px -48px;
+}
+.tiktok {
+  background-position: -144px 0;
+}
+.tiktok:hover {
+  background-position: -144px -48px;
+}
+.icon:hover {
+  transform: translateY(-4px);
+}
+
+/* ------------------------------------------------ */
+
+/* ACORDEON-------------------------------------- */
+.acordeon {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.acordeon ol {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.acordeon li {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.acordeon li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.acordeon ol:hover li {
+  flex: 0.5;
+}
+.acordeon ol li:hover {
+  flex: 5;
+}
+
+.acordeon li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* ---------------------------------------------- */
+
+/* PORTADAS DISCOS--------------------------------------------- */
+.contenedor_disco {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.disco {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ornamento_disco {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-image: url(../images/ornamento_discos.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 2;
+}
+/* ---------------------------------------------------- */
+
+/* DESCRIPCION DISCOS--------------------------------- */
+.texto_discos {
+  text-align: left;
+}
+
+.texto_discos h2 {
+  font-family: "uncial_antiqua";
+  font-size: 48px;
+  color: #8c382a;
+  margin: 0;
+}
+
+.texto_discos ol {
+  margin: 0 0 20px 0;
+}
+
+.texto_discos li {
+  margin: 0;
+  font-family: corcomat_medium;
+  font-size: 24px;
+  list-style-type: "-";
+  list-style-position: inside;
+}
+
+.texto_discos p {
+  margin: 15px 0 15px 0;
+  font-family: corcomat_medium;
+  font-size: 24px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.texto_discos span {
+  margin: 15px 0 15px 0;
+  font-family: corcomat_bold;
+  font-size: 16px;
+}
+
+ol,
+ol {
+  padding: 0;
+  margin: 0;
+}
+/* ------------------------------------------------------- */
+
+/* MODALES-------------------------------------------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.modal.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-contenido {
+  background: #121214;
+  padding: 35px;
+  border-radius: 30px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal.mostrar .modal-contenido {
+  transform: scale(1);
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f5f2eb;
+  line-height: 1;
+}
+
+.cerrar:hover {
+  color: #ff5c5c;
+}
+/* ---------------------------------------- */
+
+/* FORMULARIO------------------------------------------*/
+
+.contenedor_formulario {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #c19a5b; /* Un gris un poco más claro que el fondo para que resalte */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  color: #f5f2eb;
+  h1 {
+    font-family: "uncial_antiqua";
+    font-size: 52px;
+    color: #8c382a;
+    margin: 0;
+  }
+}
+
+.sorteo_intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: 1px solid #8c382a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+
+  label {
+    font-family: corcomat_medium;
+    font-size: 28px;
+    color: #121214;
+  }
+}
+
+legend,
+.instruccion {
+  font-family: corcomat_medium;
+  font-size: 36px;
+  color: #121214;
+}
+
+.grupo_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.grupo_input label {
+  margin-bottom: 5px;
+}
+
+.grupo_input input[type="text"],
+.grupo_input input[type="email"],
+.grupo_input textarea,
+.grupo_input input[type="file"] {
+  padding: 10px;
+  border: 1px solid #f5f2eb;
+  border-radius: 5px;
+  background-color: #f5f2eb;
+  color: #121214;
+  font-family: inherit;
+}
+
+.grupo_input input:focus,
+.grupo_input textarea:focus {
+  outline: none;
+  border-color: #8c382a;
+}
+
+.grupo_checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grupo_checkbox label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn_enviar {
+  border: 2px solid #8c382a;
+  background-color: #8c382a;
+  color: #f5f2eb;
+  padding: 12px 24px;
+  font-family: "uncial_antiqua";
+  font-size: 42px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+/* GRACIAS --------------------------------------------------- */
+.contenedor_gracias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 40px 20px;
+}
+
+.mensaje_aurora {
+  max-width: 1000px;
+  background-color: #c19a5b;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  color: #f5f2eb;
+
+  h1 {
+    font-family: "uncial_antiqua";
+    font-size: 52px;
+    color: #8c382a;
+    margin: 0;
+  }
+
+  p {
+    font-size: 28px;
+  }
+}
+
+.btn_volver {
+  border: 2px solid #8c382a;
+  background-color: #8c382a;
+  color: #f5f2eb;
+  padding: 12px 24px;
+  font-family: "uncial_antiqua";
+  font-size: 42px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+
+/* RESPONSIVE TABLET MAX WIDTH 960------------------------------------------------------------- */
+@media (max-width: 960px) {
+  /* Base / tipografía ------------------------------------------- */
+  p {
+    font-size: 20px;
+  }
+
+  .titulos_h2 {
+    font-size: 44px;
+  }
+
+  .titulos_h3 {
+    font-size: 30px;
+  }
+
+  legend,
+  .instruccion {
+    font-size: 22px;
+  }
+
+  fieldset label {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .banner_imagen {
+    background-image: url(../images/aurora_banner-960.png);
+  }
+
+  .ornamento {
+    background-image: url(../images/ornamento-960.png);
+  }
+
+  .contenedor {
+    width: 90%;
+  }
+
+  main {
+    margin-bottom: 20px;
+  }
+
+  /* NAVBAR---------- */
+  header nav ul {
+    gap: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* BANNER------- */
+  .banner {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .banner_imagen {
+    height: 420px;
+    background-size: cover;
+  }
+
+  .contenido_banner {
+    padding: 30px 20px;
+  }
+
+  .titulo_banner {
+    font-size: 70px;
+  }
+
+  .btns_banner {
+    flex-wrap: wrap;
+  }
+
+  .btn_escuchar,
+  .btn_discografia,
+  .btn_canciones,
+  .btn_spotify,
+  .btn_volver,
+  .btn_enviar {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+
+  /* GRIDS---------- */
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  #cure_for_me {
+    width: 100%;
+  }
+
+  .ornamento {
+    max-width: 300px;
+    height: 360px;
+  }
+
+  #naturaleza,
+  #humanidad,
+  #espiritualidad,
+  #tierra {
+    width: 160px;
+    height: 160px;
+  }
+
+  .img_manos_celestiales {
+    height: 150px;
+  }
+
+  #lunas {
+    height: 220px;
+    background-size: contain;
+  }
+
+  #hongos {
+    height: 150px;
+  }
+
+  .acordeon {
+    height: 400px;
+  }
+
+  /* DISCOS--------------- */
+  .contenedor_disco {
+    width: 280px;
+    height: 280px;
+  }
+
+  .texto_discos {
+    text-align: center;
+  }
+
+  .texto_discos h2 {
+    font-size: 32px;
+  }
+
+  .texto_discos p,
+  .texto_discos li {
+    font-size: 18px;
+  }
+
+  /* FORMULARIO------------------------ */
+  .contenedor_formulario h1,
+  .mensaje_aurora h1 {
+    font-size: 36px;
+  }
+
+  .contenedor_formulario {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .mensaje_aurora p {
+    font-size: 22px;
+  }
+
+  /* FOOTER------------- */
+  .footer {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 25px 0;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer div {
+    padding: 5px 20px;
+  }
+
+  .footer > div:nth-child(1),
+  .footer > div:nth-child(2),
+  .footer > div:nth-child(3) {
+    justify-self: center;
+  }
+
+  .footer ol {
+    font-size: 16px;
+  }
+
+  .redes ol {
+    justify-content: center;
+  }
+}
+
+
+/* MEDIA QUERY PARA MOBILE MAX 480--------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  p {
+    font-size: 17px;
+  }
+
+  .titulos_h2 {
+    font-size: 28px;
+  }
+
+  .titulos_h3 {
+    font-size: 20px;
+  }
+
+  legend,
+  .instruccion {
+    font-size: 18px;
+  }
+
+  fieldset label {
+    font-size: 16px;
+  }
+
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .banner_imagen {
+    background-image: url(../images/aurora_banner-480.png);
+  }
+
+  .ornamento {
+    background-image: url(../images/ornamento-480.png);
+  }
+
+  header nav ul {
+    gap: 10px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* BANNER------------------ */
+  .banner_imagen {
+    height: 300px;
+  }
+
+  .contenido_banner {
+    padding: 20px 15px;
+  }
+
+  .titulo_banner {
+    font-size: 40px;
+  }
+
+  .btns_banner {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .btn_escuchar,
+  .btn_discografia,
+  .btn_canciones,
+  .btn_spotify,
+  .btn_volver {
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* GRID------------------ */
+  .grid4 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .ornamento {
+    max-width: 220px;
+    height: 280px;
+    font-size: 20px;
+    margin: 0 auto 30px;
+  }
+
+  #naturaleza,
+  #humanidad,
+  #espiritualidad,
+  #tierra {
+    width: 130px;
+    height: 130px;
+  }
+
+  /* ELEMENTOS QUE SE OCULTAN ------------- */
+  .acordeon,
+  .img_manos_celestiales,
+  #lunas,
+  #hongos,
+  .ornamento_disco {
+    display: none;
+  }
+
+  /* DISCOS------------------ */
+  .contenedor_disco {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .texto_discos h2 {
+    font-size: 24px;
+  }
+
+  .texto_discos p,
+  .texto_discos li {
+    font-size: 15px;
+  }
+
+  .texto_discos span {
+    font-size: 13px;
+  }
+
+  /* FORMULARIO--------------- */
+  .contenedor_formulario {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .contenedor_formulario h1 {
+    font-size: 26px;
+  }
+
+  .btn_enviar {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+
+  /* GRACIAS-------------------- */
+  .mensaje_aurora {
+    padding: 20px;
+  }
+
+  .mensaje_aurora h1 {
+    font-size: 26px;
+  }
+
+  .mensaje_aurora p {
+    font-size: 17px;
+  }
+
+  /* MODAL------------------ */
+  .modal-contenido {
+    padding: 20px;
+  }
+
+  .cerrar {
+    font-size: 22px;
+  }
+
+  /* FOOTER------------------------- */
+  .footer ol {
+    font-size: 13px;
+  }
+
+  .footer div {
+    padding: 5px 10px;
+  }
+}
