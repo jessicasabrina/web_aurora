@@ -1,15 +1,18 @@
 /* TIPOGRAFIAS--------------------------------------------------------------- */
 @font-face {
-  font-family: "corcomat_bold"; /* Dale el nombre que quieras usar */
-  src: url(../fonts/CormorantUnicase-Bold.ttf) format("truetype");
+  font-family: "corcomat_bold";
+  src: url(../fonts/CormorantUnicase-Bold.ttf) format("truetype"),
+  url(../fonts/CormorantUnicase-Bold.woff) format("woff");
 }
 @font-face {
-  font-family: "corcomat_medium"; /* Dale el nombre que quieras usar */
-  src: url(../fonts/CormorantUnicase-Medium.ttf) format("truetype");
+  font-family: "corcomat_medium";
+  src: url(../fonts/CormorantUnicase-Medium.ttf) format("truetype"),
+  url(../fonts/CormorantUnicase-Medium.ttf) format("woff");
 }
 @font-face {
-  font-family: "uncial_antiqua"; /* Dale el nombre que quieras usar */
-  src: url(../fonts/UncialAntiqua-Regolar.ttf) format("truetype");
+  font-family: "uncial_antiqua";
+  src: url(../fonts/UncialAntiqua-Regolar.ttf) format("truetype"),
+  url(../fonts/UncialAntiqua-Regolar.woff) format("woff");
 }
 /* ------------------------------------------------------------------------*/
 
@@ -117,6 +120,10 @@ header nav a {
 
 header nav a:hover {
   color: #c19a5b;
+}
+
+.activo {
+  color: #8c382a;
 }
 /* ------------------------------------------------------------------------------------*/
 
@@ -437,6 +444,10 @@ header nav a:hover {
 }
 .icon:hover {
   transform: translateY(-4px);
+}
+
+.ocultar {
+  display: none;
 }
 
 /* ------------------------------------------------ */
