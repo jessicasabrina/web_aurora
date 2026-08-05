@@ -1,18 +1,21 @@
 /* TIPOGRAFIAS--------------------------------------------------------------- */
 @font-face {
   font-family: "corcomat_bold";
-  src: url(../fonts/CormorantUnicase-Bold.ttf) format("truetype"),
-  url(../fonts/CormorantUnicase-Bold.woff) format("woff");
+  src:
+    url(../fonts/CormorantUnicase-Bold.ttf) format("truetype"),
+    url(../fonts/CormorantUnicase-Bold.woff) format("woff");
 }
 @font-face {
   font-family: "corcomat_medium";
-  src: url(../fonts/CormorantUnicase-Medium.ttf) format("truetype"),
-  url(../fonts/CormorantUnicase-Medium.ttf) format("woff");
+  src:
+    url(../fonts/CormorantUnicase-Medium.ttf) format("truetype"),
+    url(../fonts/CormorantUnicase-Medium.ttf) format("woff");
 }
 @font-face {
   font-family: "uncial_antiqua";
-  src: url(../fonts/UncialAntiqua-Regolar.ttf) format("truetype"),
-  url(../fonts/UncialAntiqua-Regolar.woff) format("woff");
+  src:
+    url(../fonts/UncialAntiqua-Regolar.ttf) format("truetype"),
+    url(../fonts/UncialAntiqua-Regolar.woff) format("woff");
 }
 /* ------------------------------------------------------------------------*/
 
@@ -373,7 +376,7 @@ header nav a:hover {
   padding: 0 50px 0 50px;
 }
 
-.footer ol {
+.footer ul {
   margin: 0;
   color: #f5f2eb;
   font-family: "uncial_antiqua";
@@ -396,7 +399,7 @@ header nav a:hover {
   align-self: center;
 }
 
-.redes ol {
+.redes ul {
   display: flex;
   gap: 15px;
   list-style: none;
@@ -765,7 +768,6 @@ legend,
   text-decoration: none;
 }
 
-
 /* RESPONSIVE TABLET MAX WIDTH 960------------------------------------------------------------- */
 @media (max-width: 960px) {
   /* Base / tipografía ------------------------------------------- */
@@ -953,15 +955,16 @@ legend,
     justify-self: center;
   }
 
-  .footer ol {
+  .footer ul {
     font-size: 16px;
+    margin-left: 0;
+    padding-left: 0;
   }
 
-  .redes ol {
+  .redes ul {
     justify-content: center;
   }
 }
-
 
 /* MEDIA QUERY PARA MOBILE MAX 480--------------------------------------------------------------------- */
 @media (max-width: 480px) {
@@ -1002,6 +1005,7 @@ legend,
     gap: 10px;
     font-size: 15px;
     padding: 10px;
+    flex-direction: column;
   }
 
   .logo {
@@ -1127,8 +1131,10 @@ legend,
   }
 
   /* FOOTER------------------------- */
-  .footer ol {
+  .footer ul {
     font-size: 13px;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .footer div {
