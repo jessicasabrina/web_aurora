@@ -770,7 +770,6 @@ legend,
 
 /* RESPONSIVE TABLET MAX WIDTH 960------------------------------------------------------------- */
 @media (max-width: 960px) {
-  /* Base / tipografía ------------------------------------------- */
   p {
     font-size: 20px;
   }
